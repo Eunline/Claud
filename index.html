@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAUD SALES CHAPA - Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CLAUD SALES</div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Nyumbani</a></li>
+                <li><a href="#skills">Ujuzi</a></li>
+                <li><a href="#projects">Miradi</a></li>
+                <li><a href="#services">Huduma</a></li>
+                <li><a href="#contact">Wasiliana</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container">
+            <img src="Claud.jpg" alt="CLAUD SALES CHAPA" class="profile-img" id="profileImg">
+            <h1>CLAUD SALES CHAPA</h1>
+            <p>Designer | Developer | Microsoft Office Expert | Adobe Photoshop Specialist</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/cloud.chapa.1" target="_blank" class="social-btn" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/claud_chapa" target="_blank" class="social-btn" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/255764014642" target="_blank" class="social-btn" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="contact-actions">
+                <a href="tel:+255764014642" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> Piga Simu
+                </a>
+                <a href="sms:+255764014642" class="btn btn-secondary">
+                    <i class="fas fa-sms"></i> Tuma SMS
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section container">
+            <h2 class="section-title">Ujuzi Wangu</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Expert katika graphic design, photo editing na visual content creation</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-file-powerpoint"></i></div>
+                    <h3>Microsoft PowerPoint</h3>
+                    <p>Ubunifu wa presentations za kitaaluma na za kibiashara</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-file-word"></i></div>
+                    <h3>Microsoft Word</h3>
+                    <p>Document creation, formatting na professional writing</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                    <h3>Microsoft Excel</h3>
+                    <p>Data analysis, formulas, charts na financial modeling</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS na JavaScript kwa kuunda websites za kisasa</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>App Development</h3>
+                    <p>Ubunifu na development ya mobile applications</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section container">
+            <h2 class="section-title">Miradi Yangu</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>SkyLink App</h3>
+                        <p>CEO, Designer & Developer wa app ya SkyLink. Mobile application ya kisasa inayotoa huduma mbalimbali.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" onclick="downloadApp('skylink')">
+                                <i class="fas fa-download"></i> Download APK
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Eunline</h3>
+                        <p>Brand na website inayotoa huduma za online. Shirikiano la kibiashara lenye lengo la kusaidia watu kupata huduma za dijitali.</p>
+                        <div class="project-links">
+                            <a href="https://eunlinedocs.netlify.app/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Tembelea Website
+                            </a>
+                           <!--   <a href="#" class="btn btn-secondary" onclick="downloadApp('eunline')">
+                                <i class="fas fa-download"></i> Download APK
+                            </a>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section container">
+            <h2 class="section-title">Huduma Zangu</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Mafunzo</h3>
+                    <p>Ninaweza kukufundisha Adobe Photoshop, Microsoft Office (Word, Excel, PowerPoint) na Web Development basics</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Assignments Assistance</h3>
+                    <p>Kusaidia kukamilisha assignments za shule au chuo kwa ubora wa juu</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3>Plagiarism Checking</h3>
+                    <p>Ukaguzi wa plagiarism na kuondoa AI elements katika kazi za maandishi</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Design</h3>
+                    <p>Ubunifu wa websites za kitaaluma kwa ajili ya biashara na matumizi binafsi</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile"></i></div>
+                    <h3>App Development</h3>
+                    <p>Kutengeneza mobile applications za Android kwa mahitaji mbalimbali</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Graphic Design</h3>
+                    <p>Logo design, banners, posters na graphic design services za aina zote</p>
+                </div>
+            </div>
+        </section>
+
+                    <!-- Contact Section -->
+        <section id="contact" class="section container">
+            <h2 class="section-title">Wasiliana                             Nami</h2>
+            <div style="text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-secondary);">
+                    <i class="fas fa-graduation-cap"></i> Chuo cha SAUT, Mwanza
+                </p>
+                <div class="contact-actions">
+                    <a href="tel:+255764014642" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i> Piga Simu: +255 764 014 642
+                    </a>
+                    <a href="sms:+255764014642" class="btn btn-secondary">
+                        <i class="fas fa-comment-dots"></i> Tuma SMS
+                    </a>
+                    <a href="https://wa.me/255764014642" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CLAUD SALES CHAPA. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; color: var(--text-secondary);">
+                Made with <i class="fas fa-heart" style="color: var(--accent-blue);"></i> by CLAUD
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+  
+    </script>
+</body>
+</html>
